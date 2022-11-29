@@ -1,0 +1,608 @@
+Procedure/Structure Oriented Programming:
+-----------------------------------------
+C-Language:
+-----------
+Disadvantages:
+--------------
+1)Security:
+
+void main()
+{
+int age=25;
+...
+...
+}
+
+2)Reusability:
+functions
+
+3)Platform Dependency:
+Test.c---->C Compiler--->Test.exe(Machine understandable format)
+Compiler is a software which converts c language instructions to machine understandable format.
+
+Object Oriented Programming:
+----------------------------
+JAVA
+----
+Object: Anything which can be disctinctly identified is called as an object. Every object has identity,attributes and actions(i.e., state and behaviour).
+
+Car object:
+-----------
+Identity--->Registration No.
+
+State--->color,model,brand,price,capacity,fueltype,mileage
+(Data Members/Variables/Properties/Fields/Attributes)
+
+Behaviour--->drive(),applyBrake(),changeGear(),reverse(),stop()
+(Methods,Functions/Operations)
+
+Class:
+------
+A class is a collection of data members and methods
+
+e.g.,
+
+class Person
+{
+//Data members
+String name;
+int age;
+float height;
+//methods
+eat(){...}
+walk(){...}
+sleep(){...}
+}
+
+age=20;//error
+
+The members(data members amd methods) of the class are accessed using objects with dot(.) operator
+
+Creating objects:
+-----------------
+syntax:(Rules of language)
+-------
+ClassName objName=new ClassName();
+
+e.g.,
+
+class Person
+{
+//Data members
+String name;
+int age;
+float height;
+//methods
+eat(){...}
+walk(){...}
+sleep(){...}
+}
+
+age=20;//error
+
+Person p=new Person();
+p.name="Mendu";
+p.age=20;
+p.height=5.8;
+p.eat();
+
+Identifying Objects and Classes:
+--------------------------------
+Mr.XXX teaches JAVA at Simplilearn. PPP attends Java Sessions.
+Mrs.XXX teaches Testing at the same company. QQQ attends Testing sessions
+
+Objects(Nouns):
+---------------
+Mr.XXX
+JAVA
+Simplilearn
+PPP
+Mrs.XXX
+Testing
+QQQ
+
+Classes(A class is a collection of related objects):
+----------------------------------------------------
+Faculty(Mr.XXX and Mrs.XXX)
+Course(JAVA and Testing)
+Company(Simplilearn)
+Student(PPP and QQQ)
+
+Advantages:
+-----------
+1)Security:
+Access Modifiers and Encapsulation
+
+2)Reusability:
+Inheritance
+
+3)Platform Independency:
+Test.java----->Java Compiler----->Test.class(byte code)
+Test.class---->(JVM-Java Virtual Machine[JIT-Just-in-time Compiler])--->Machine Understandable Format
+
+Source Code to Byte Code
+Byte Code to Machine understandable format
+
+JRE--->Java Runtime Environment
+JVM--->Java Virtual Machine
+JDK--->Java Development Kit
+
+JAVA Features:
+--------------
+JAVA is an Object Oriented Programming Language developed by James Gosling at Sun Microsystems
+Sun Microsystems is acquired by Oracle Corporation in 2010.
+
+Object Oriented Features:
+-------------------------
+Objects
+Classes
+Abstraction
+Encapsulation
+Inheritance
+Polymorphism
+
+1.Simple:
+	-Java is simple as it contains lots of APIs(Application Programming 	Interfaces)/libraries.
+
+e.g., Array.sort(n);
+
+2.Object-Oriented:
+	-Java is Object Oriented(OO) as it supports features like
+	 Objects,classes,abstraction,encapsulation,inheritance and polymorphism
+
+3.Robust:
+	-Robust means strong
+	-In Java we can develop robust applications using Exception Handling which 	 avoids abnormal termination of application.
+
+4.Platform Independent:
+	-A Java program can run on any platform(OS)
+	-A Java program is Write Once Run Anywhere(WORA)
+	-A Java program is a collection of classes
+
+5.Interpreted:
+	-Java command is an interpreter
+	-Java interpreter executes the byte code line by line
+	-javac command is a compiler
+	-java compiler converts Java source code into byte code at a time
+
+6.Portable:
+	-Java is portable since the size of all data types is same on all platforms(OS)
+
+	C/C++:
+	------
+	size of int data type==>2 bytes on 32-bit/4 bytes on 64-bit OS
+
+	JAVA:
+	-----
+	size of int data type===>4 bytes on 32-bit/64-bit 
+
+7.Secure:
+	-Java is secure as Java does not support pointers as pointers violate security.
+
+	C/C++:
+	------
+	A pointer is a variable which contains the address of another variable.
+
+	e.g.:
+		int n=10;
+		int *p=&n;//address of n variable
+
+8.Multithreaded:
+	-A thread is a light weight process under execution within a process
+	-Multithreading is used to increase the performance of the application
+
+9.Dynamic:
+	-In Java memory allocation for arrays, strings, objects is done during runtime	 (dynamic)
+	-Java is automatic garbage collection(freeing up of unused memory blocks)
+
+10.Distributed:
+	-Distributed applications are used for the purpose of exchanging data from one 	 application to another application.
+
+
+Developing a Java Application at command prompt:
+------------------------------------------------
+1.Open the command prompt by typing "cmd" in search/run
+	C:\..>d:
+	d:\>
+
+2.Create a folder/directory "JavaPrograms" as follows
+	
+	d:\>md JavaPrograms
+		md means make directory
+
+3.Change the folder to "JavaPrograms" as follows
+
+	d:\>cd JavaPrograms
+	d:\JavaPrograms>
+		cd means change directory
+
+4.Create a Java source code file "Welcome.java" as follows
+	
+	d:\JavaPrograms>notepad Welcome.java
+
+5.Type the following code in Welcome.java as follows
+
+//To display welcome message onto the screen
+class Welcome
+{
+	public static void main(String[] args)
+	{
+		System.out.println("Welcome to JAVA FSD");
+	}
+}
+
+Note: Save the file(Ctrl+s)
+	
+6.Compile the Java source code file, Welcome.java as follows
+	d:\JavaPrograms>javac Welcome.java
+
+	which creates Welcome.class file called as byte code 
+
+7.Run the Java Byte code file, Welcome.class as follows
+	d:\JavaPrograms>java Welcome
+
+	which displays "Welcome to JAVA FSD" message onto the screen
+
+Note:
+-----
+-Every statement in Java should end with a semicolon(;)
+-Java is case sensitive programming language means there is a difference between  uppercase and lowercase letters
+
+IDEs:
+-----
+-IDE stands for Integrated Development Environment
+-IDEs are used to develop the applications easily and rapidly
+
+Popular JAVA IDEs:
+------------------
+-Eclipse
+-NetBeans
+-IntelliJ
+-JDeveloper
+-JBuilder
+-MyEclipse
+
+Download and Install Eclipse IDE:
+---------------------------------
+Google: eclipse IDE download
+url: https://www.eclipse.org/downloads/
+
+Develop a Java Application in Eclipse IDE:
+------------------------------------------
+Before Launching the Eclipse IDE it will ask for the workspace. Please select a folder where you want to store all the project related files
+
+1.Create a Java Project
+	Click on File-->New-->Project-->Java Project
+	
+	Project Name:Day01Proj01
+	
+	and click on finish
+
+	Create module-info.java==>click Don't create
+
+2.Create a class in Java Project(Day01Proj01)
+	
+	Right click on Day01Proj01-->New-->Class
+
+	Name:Welcome
+
+	and make check mark to main()
+
+	and click Finish
+
+3.Type the following code in Welcome.java
+
+public class Welcome {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Welcome to JAVA FSD");
+	}
+
+}
+
+4.Run the application
+	Right click on Welcome.java--->Run As-->Java Application
+
+	which opens a console and displays "Welcome to JAVA FSD" in console
+
+
+Eclipse Shortcuts:
+------------------
+-public static void main(String[] args)
+	shortcut: type main and press ctrl+space+enter key
+
+-System.out.println();
+	shortcut: type sysout and press ctrl+space
+
+-To Run
+	shortcut: ctrl+F11
+
+-To comment single line(//)
+	shortcut: ctrl+/
+
+-To comment multiple line(/*.....*/)	
+	shortcut: select the lines and press ctrl+shift+/
+		  To uncomment press ctrl+shift+\
+
+-To increase font size:
+	shortcut: ctrl+
+
+-To decrease font size:
+	shortcut: ctrl-
+
+Java Basics:
+------------
+keyword:
+--------
+-It is a predefined/reserved word whose meaning is known to the compiler directly
+-Java has 50 keywords
+-All keywords are lower case letters
+
+e.g.,
+	public,static,void,int,float,char,boolean,if,else,
+	switch,while,do,for,break,continue....
+
+variable:
+---------
+	A variable is an identifier which allocated some memory space
+
+Rules for identifiers:(variable/method/classname)
+-------------------------------------------------
+-Can contain A-Z,a-z,0-9,_,$
+-cannot start with a digit(0-9)
+-cannot be a keyword
+
+Valid identifiers:
+------------------
+empNum
+rollno123
+customer_name
+$empSalary
+
+Invalid Identifiers:
+--------------------
+emp Name(space is not allowed)
+123empNo(cannot start with a digit)
+custNo#(#  is not allowed)
+while(cannot be a keyword)
+
+Data Type:
+----------
+Type of data the variable holds is called as data type
+
+Types:
+------
+-Primitive Data Types
+-Reference Data Types
+
+Primitive Data Types:
+---------------------
+DataType     Size	Default value
+--------     ----	-------------
+byte-------> 1 byte  ------->0
+short------> 2 bytes ------->0
+char-------> 2 bytes ------->' '
+int--------> 4 bytes ------->0
+long-------> 8 bytes ------->0
+float------> 4 bytes ------->0.0
+double-----> 8 bytes ------->0.0
+boolean----> 1 bit   ------->false
+
+int a,b;//e.g. 12,20,55
+char c;//e.g. 'a','d','m'
+float f;//e.g. 12.45,45.41.6.89
+
+boolean b1=true//1
+boolean b2=false//0
+
+Reference Types:
+----------------
+e.g., Arrays,String,Classes
+
+Points on Data Types:
+---------------------
+Default values are applicable only to the data members(declared within the class) of the class not for local variables(declared within a method)
+
+e.g.,
+
+class Sample
+{
+  int m;//data member
+  void xxx()
+  {
+	int n;//local variable
+	SOP(n);//error-local variable n should be initialized
+  }
+  PSVM()
+  {
+	Sample s=new Sample();
+	SOP(s.m);//0
+ 	s.xxx();
+  }
+}
+
+-Local variables need to be initialized
+
+-Memory allocation for reference data types is done during runtime using new operator
+
+-Default value for reference data type is null
+
+e.g., 	String s;//data member
+	SOP(s);//null
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

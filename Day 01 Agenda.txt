@@ -1,0 +1,18 @@
+Agenda
+===========================
+
+Installation of Eclipse
+
+Your First Project in Java
+
+Features of JAVA
+
+Life Cycle of Java Program
+
+Java Basics
+
+Data types & Number System
+
+Type Casting
+
+Operators in Java
